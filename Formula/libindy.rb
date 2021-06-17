@@ -10,7 +10,7 @@ class Libindy < Formula
   depends_on "rbenv/tap/openssl@1.0"
 
   def install
-    lib.install ["lib/*"]
+    lib.install ["./lib/libindy.dylib"]
   end
 
   test do
