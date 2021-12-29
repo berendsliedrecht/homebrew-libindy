@@ -7,7 +7,7 @@ class Libindy < Formula
 
   depends_on "libsodium" => "18"
   depends_on "zeromq"
-  depends_on "rbenv/tap/openssl@1.0" => :recommended
+  depends_on "openssl@1.1"
 
   def install
     lib.install ["./lib/libindy.dylib"]
